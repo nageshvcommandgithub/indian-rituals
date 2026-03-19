@@ -29,6 +29,7 @@ async function loadRitualDetails() {
 
         renderRitualDetail(ritual, data);
         renderRelatedRituals(ritual, data.rituals);
+        loadComments(ritual);
 
     } catch (error) {
         console.error('Error loading ritual:', error);
@@ -210,6 +211,26 @@ function showError(message) {
     errorDiv.textContent = message;
 
     container.appendChild(errorDiv);
+}
+
+// Load comments using utterances
+function loadComments(ritual) {
+    const container = document.getElementById('utterances-container');
+    if (!container) return;
+
+    // Clear any existing comments
+    clearElement(container);
+
+    // Create utterances script
+    const script = document.createElement('script');
+    script.src = 'https://utteranc.es/client.js';
+    script.setAttribute('repo', 'nageshvcommandgithub/indian-rituals');
+    script.setAttribute('issue-term', 'pathname');
+    script.setAttribute('theme', 'github-light');
+    script.setAttribute('crossorigin', 'anonymous');
+    script.async = true;
+
+    container.appendChild(script);
 }
 
 // Initialize when DOM is loaded

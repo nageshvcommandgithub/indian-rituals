@@ -12,6 +12,7 @@ A web application that explores the deep meaning and scientific reasons behind I
   - Scientific and practical reasons
   - Historical context
   - Regional variations across India
+- **Community Comments**: Public discussion section on each ritual/festival page powered by GitHub Issues
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **No Dependencies**: Built with vanilla HTML, CSS, and JavaScript - no frameworks required
 
@@ -149,16 +150,48 @@ Edit `css/styles.css` and modify the CSS variables in the `:root` section:
 
 2. Tag rituals with the new category ID
 
+## 💬 Comments System
+
+This project includes a public discussion section on each ritual/festival page using [utterances](https://utteranc.es/) - a lightweight commenting system built on GitHub Issues.
+
+### Setup Required
+
+To enable comments on your deployed site:
+
+1. **Enable GitHub Issues** in your repository settings
+2. **Install utterances app**: Visit https://github.com/apps/utterances and install it for your repository
+3. Comments will automatically work on all ritual/festival detail pages
+
+See [COMMENTS_SETUP.md](COMMENTS_SETUP.md) for detailed setup instructions.
+
+### Features
+
+- Free and open-source with no ads
+- Privacy-friendly (no tracking)
+- GitHub authentication prevents spam
+- Full Markdown support
+- Moderation via GitHub Issues
+- Email notifications for new comments
+
+### How Users Comment
+
+1. Visit any ritual/festival page
+2. Scroll to the "Discussion & Comments" section
+3. Sign in with GitHub
+4. Leave comments, ask questions, or share additional insights
+
+Comments help build a community around preserving and sharing cultural knowledge!
+
 ## 🔧 Future Enhancements
 
-This is an MVP (Minimum Viable Product). Here are ideas for future improvements:
+Here are ideas for future improvements:
 
 - **Multi-language Support**: Add Hindi, Tamil, Telugu, and other Indian languages
-- **User Contributions**: Allow community members to submit new rituals
 - **Images and Videos**: Add multimedia content for better understanding
 - **Audio Pronunciations**: Help with Sanskrit terms and mantras
 - **Social Sharing**: Share rituals on social media
 - **Favorites**: Let users bookmark their favorite rituals
+- **User Submissions**: Allow community members to submit new rituals via forms
 - **Migration to Next.js**: Move to a modern framework for better performance and SEO
 - **Database Integration**: Store content in a database for easier management
 - **Content Management System**: Admin panel for managing content

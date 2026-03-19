@@ -357,6 +357,36 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Comments Section */
+.comments-section {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.comments-section h2 {
+    font-size: 1.875rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.comments-intro {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+#utterances-container {
+    margin-top: 1.5rem;
+}
+
 /* Related Section */
 .related-section {
     margin-top: 3rem;
