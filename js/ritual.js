@@ -225,7 +225,9 @@ function loadComments(ritual) {
     const script = document.createElement('script');
     script.src = 'https://utteranc.es/client.js';
     script.setAttribute('repo', 'nageshvcommandgithub/indian-rituals');
-    script.setAttribute('issue-term', 'pathname');
+    // Use ritual title as unique identifier for each comment thread
+    script.setAttribute('issue-term', ritual.title);
+    script.setAttribute('label', 'comments');
     script.setAttribute('theme', 'github-light');
     script.setAttribute('crossorigin', 'anonymous');
     script.async = true;

@@ -75,14 +75,52 @@ Other options:
 - `issue-number` - Specific issue number
 - `specific-term` - Custom term
 
-## Moderation
+## Moderation & Deleting Comments
 
-All comments appear as GitHub Issues:
+All comments appear as GitHub Issues, giving you full control:
 
+### Viewing All Comments
 1. Go to: https://github.com/nageshvcommandgithub/indian-rituals/issues
-2. View and manage comments
-3. Lock threads, hide spam, or close issues as needed
-4. GitHub's moderation tools apply
+2. Each ritual/festival has its own issue (labeled "comments")
+3. Issue title matches the ritual/festival name
+
+### Deleting Individual Comments
+1. Go to the specific issue (comment thread)
+2. Find the comment you want to delete
+3. Click the **"..."** menu on the comment
+4. Select **"Delete"** (only available for your repository)
+5. Confirm deletion
+
+### Hiding Spam/Abusive Comments
+1. Click **"..."** menu on the comment
+2. Select **"Hide"**
+3. Choose reason (spam, abuse, off-topic)
+4. Comment will be hidden from public view
+
+### Locking Comment Threads
+To prevent further comments on a ritual:
+1. Open the issue for that ritual
+2. Click **"Lock conversation"** in the sidebar
+3. Select reason (off-topic, resolved, too heated, spam)
+4. No new comments can be added (existing ones remain visible)
+
+### Deleting Entire Thread
+To remove all comments for a ritual/festival:
+1. Open the issue
+2. Click **"Delete issue"** at the bottom
+3. Confirm deletion
+4. The thread will be recreated when someone comments again
+
+### Editing Comments
+- You can edit your own comments
+- You can edit any comment in your repository (as owner)
+- Click **"..."** → **"Edit"**
+
+### Banning Users
+If someone repeatedly posts spam:
+1. Go to repository **Settings** → **Moderation**
+2. Block the user
+3. They won't be able to comment anymore
 
 ## Testing
 
